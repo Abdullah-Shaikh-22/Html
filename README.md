@@ -1,2 +1,2 @@
 # HTML
-HTML | Web Development | Frontend | Projects | Practice
+HTML | Web Development | Frontend | Projects | Practice | Notes
