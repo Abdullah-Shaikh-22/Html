@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather App</title>
+<style>
+body {
+font-family:Arial;
+background:linear-gradient(135deg,#38bdf8,#1e40af);
+color:white;text-align:center;padding:50px 15px;
+}
+.box {
+background:#ffffff25;
+padding:30px;
+border-radius:15px;
+max-width:350px;
+margin:auto;
+}
+input,button {
+padding:12px;margin:8px;border:0;border-radius:5px;
+}
+button {background:#facc15;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>Weather App ☀️</h1>
+<input id="city" placeholder="Enter city name">
+<button onclick="getWeather()">Check Weather</button>
+<h2 id="result">Your weather will appear here</h2>
+</div>
+<script>
+async function getWeather(){
+const city=document.getElementById("city").value.trim();
+if(!city){
+alert("Please enter a city!");
+return;
+}
+document.getElementById("result").innerText=
+"Weather API required to get live weather for "+city+".";
+}
+</script>
+</body>
+</html>
