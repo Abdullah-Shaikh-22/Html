@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Paradise</title>
+<style>
+body{margin:0;font-family:Arial;text-align:center;background:#fff7ed}
+header{background:#7c2d12;color:white;padding:35px}
+.menu{display:flex;justify-content:center;flex-wrap:wrap;gap:20px;padding:30px}
+.item{background:white;padding:25px;border-radius:12px;width:200px}
+button{background:#ea580c;color:white;padding:12px;border:0;border-radius:5px;cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+<h1>🍕 Food Paradise</h1>
+<p>Delicious Food, Happy Life!</p>
+</header>
+<h2>Our Menu</h2>
+<div class="menu">
+<div class="item"><h3>Pizza 🍕</h3><p>₹199</p></div>
+<div class="item"><h3>Burger 🍔</h3><p>₹99</p></div>
+<div class="item"><h3>Pasta 🍝</h3><p>₹149</p></div>
+</div>
+<button onclick="order()">Order Now</button>
+<script>
+function order(){
+alert("Thank you! Please contact us to place your order.");
+}
+</script>
+</body>
+</html>
